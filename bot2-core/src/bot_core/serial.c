@@ -23,6 +23,9 @@
 
 #include "serial.h"
 
+#ifndef FIONREAD
+#define FIONREAD TIOCINQ
+#endif
 
 static int bot_serial_translate_baud(int inrate);
 

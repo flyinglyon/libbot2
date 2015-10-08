@@ -1,4 +1,4 @@
-This is the code base for libbot2.
+This is the Cygwin code base for libbot2.
 
 The libbot2 project provides a set of libraries, tools, and algorithms that are
 designed to facilitate robotics research. Among others, these include
@@ -61,7 +61,7 @@ Requirements
     freeglut3-dev
     libjpeg-dev
 
-    Additionally, you'll need to install LCM from http://lcm.googlecode.com
+    Additionally, you'll need to install LCM from https://github.com/lcm-proj/lcm
 
   On OS X, the recommended procedure is to use MacPorts and install:
     cmake
@@ -75,8 +75,16 @@ Requirements
     pango
     mesa
 
-    Additionally, you'll need to install LCM from http://lcm.googlecode.com
+    Additionally, you'll need to install LCM from https://github.com/lcm-proj/lcm
 
+  On Cygwin
+	Setup a working Cygwin by running the batch file cyg-install-x86_64.bat or examine this file for required packages
+	Build from the cygwin shell using the guidance below
+	
+    Additionally, you'll need to install LCM from https://github.com/lcm-proj/lcm
+	You should build a version in the Cygwin shell and run configure with the  --enable-static flag
+	Then export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
+	
 (Local) Installation
 ====================
   libbot2 adheres to the Pods core policy, and makes use of the Pods build tools.

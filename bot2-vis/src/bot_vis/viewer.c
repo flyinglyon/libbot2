@@ -39,6 +39,10 @@
 
 #define MAX_REDRAW_HZ 30
 
+#ifndef HUGE
+#define HUGE MAXFLOAT
+#endif
+
 static int g_draws = 0;
 
 
